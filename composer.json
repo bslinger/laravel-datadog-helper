@@ -1,7 +1,7 @@
 {
   "name": "chaseconey/laravel-datadog-helper",
   "type": "library",
-  "description": "A Laravel Datadog helper package.",
+  "description": "A Laravel Datadog helper package. Forked by bslinger",
   "keywords": [
     "chaseconey",
     "laravel-datadog-helper"
