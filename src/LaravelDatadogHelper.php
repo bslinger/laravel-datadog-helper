@@ -2,7 +2,9 @@
 
 namespace ChaseConey\LaravelDatadogHelper;
 
-class LaravelDatadogHelper extends \Datadogstatsd
+use DataDog\DogStatsd;
+
+class LaravelDatadogHelper extends DogStatsd
 {
 
     /**
