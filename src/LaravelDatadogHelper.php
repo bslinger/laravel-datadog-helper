@@ -13,7 +13,7 @@ class LaravelDatadogHelper extends DogStatsd
     public function send($data, $sampleRate = 1.0, array $tags = null)
     {
         $prefixedData = self::prefixData($data);
-        __parent->send($prefixedData, $sampleRate, $tags);
+        parent::send($prefixedData, $sampleRate, $tags);
     }
 
     /**
