@@ -2,13 +2,15 @@
 
 namespace ChaseConey\LaravelDatadogHelper;
 
-class LaravelDatadogHelper extends \Datadogstatsd
+use DataDog\DogStatsd;
+
+class LaravelDatadogHelper extends DogStatsd
 {
 
     /**
      * {@inheritdoc}
      */
-    public static function send($data, $sampleRate = 1.0, array $tags = null)
+    public function send($data, $sampleRate = 1.0, $tags = null)
     {
         $prefixedData = self::prefixData($data);
         parent::send($prefixedData, $sampleRate, $tags);

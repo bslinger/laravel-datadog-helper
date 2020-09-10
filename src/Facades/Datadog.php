@@ -1,6 +1,6 @@
 <?php
 
-namespace ChaseConey\LaravelDatadogHelper;
+namespace ChaseConey\LaravelDatadogHelper\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
